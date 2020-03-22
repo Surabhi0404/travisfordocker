@@ -3,8 +3,8 @@ services:
     - docker
 
 script:
-    - docker build -t mannydesigns/node .
-    - docker images mannydesigns/node
+    - docker build -t surabhdesigns/node .
+    - docker images surabhdesigns/node
 
 before_deploy:
     - docker login -u surabhi0404 -p Surabhig9@
@@ -14,4 +14,3 @@ deploy:
     script: docker push mannaydesigns/node
     on:
         branch: master
-        
